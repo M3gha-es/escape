@@ -1,0 +1,37 @@
+hr {
+    width: 70% !important;
+    height: 5px !important;
+    margin: auto;
+    color: rgb(39, 39, 57);
+}
+
+.Eform {
+    height: 75%;
+    width: 75%;
+    background-color: rgb(244, 249, 252);
+    margin:auto;
+    -webkit-box-shadow: 6px 6px 8px 8px #585555;
+    -moz-box-shadow: 6px 6px 8px 8px #585555;
+    box-shadow: 6px 6px 8px 8px #585555;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 5%;
+}
+
+.jumbotron {
+    padding-top: 2%;
+}
+.form-floating{
+    width: 70%;
+    margin: auto;
+}
+.form-label{
+    padding-right: 1%;
+}
+
+.formErrors{
+    color: red;
+    font-style: italic;
+    padding: 5px;
+    margin-top:1%;
+}

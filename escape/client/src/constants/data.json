@@ -1,0 +1,60 @@
+ { 
+    "artList": [
+    {
+        "id":1,
+        "title":"Angry Wolf",
+        "desciption":"A simple pencil sketch on A3 artist quality paper.",
+        "url":"angry-wolf.jpg",
+        "access":"all"
+    },
+    {
+        "id":2,
+        "title":"Beach Day",
+        "desciption":"Abstract beach day painting using acrylic colors on wood.",
+        "url":"beach-day.jpg",
+        "access":"user"
+    },
+    {
+        "id":3,
+        "title":"Blue Throat",
+        "desciption":"A simple blue throat using pencils on A4 paper",
+        "url":"blue-throat.jpg",
+        "access":"user"
+    },
+    {
+        "id":4,
+        "title":"Long Horn",
+        "desciption":"A cute long horn using pens and crylic paint on canvas.",
+        "url":"cute-long-horn.png",
+        "access":"user"
+    },
+    {
+        "id":5,
+        "title":"Orange Headed Thrush",
+        "desciption":"A simple pencil sketch of a rare blue throat on A4 paper.",
+        "url":"orange-headed-thrush.jpg",
+        "access":"user"
+    },
+    {
+        "id":6,
+        "title":"Orcas",
+        "desciption":"An acrylic painting of orcas on canvas.",
+        "url":"orcas.jpg",
+        "access":"all"
+    },
+    {
+        "id":7,
+        "title":"Red Winged Fairy Wren",
+        "desciption":"A simple pencil sketch of a rare red winged fairy wren on A4 paper.",
+        "url":"red-winged-fairy-wren.jpg",
+        "access":"user"
+    },
+    {
+        "id":8,
+        "title":"Yin Yang Dragon",
+        "desciption":"An acrylic painting of the yin yan dragons on canvas.",
+        "url":"yin-yang-dragon.jpg",
+        "access":"user"
+    }
+    ]
+ }

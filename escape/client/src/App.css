@@ -1,0 +1,121 @@
+.container-lg {
+    background-color: rgb(244, 248, 250);
+    padding-bottom: 3%;
+    -webkit-box-shadow: 4px 4px 4px 4px #585555;
+    -moz-box-shadow: 4px 4px 4px 4px #585555;
+    box-shadow: 4px 4px 4px 4px #585555;
+}
+/* .card-deck {
+    display: flex;
+    gap: 15px;
+} */
+/* .card img: hover {
+    opacity: 0.7;
+} */
+.col-sm-4{
+    margin-top: 1%;
+}
+.page-header {
+    margin: 1%;
+}
+.logoI {
+    padding: 1%;
+    height:80%;
+    animation: 4s linear infinite logo-rotation;
+}
+.logo {
+    margin-left: 20%;
+    
+}
+.logoT {
+   position: absolute;
+   margin-top: -2.6%;
+   margin-left: 0.2%;
+   font-size: 54px;
+   color:#FFFACD;
+   font-style: bold;
+   font-family: "Lucida Console", cursive;
+   animation: 1s ease infinite logo-bounce;
+}
+.page-title {
+    font-size: 60px;
+   color:#454439;
+   font-style: italic;
+   font-family: "Lucida Console", cursive;
+}
+.page-title-end {
+    display: inline-block;
+   animation: move-right 1s linear;
+   
+}
+.page-title-mid {
+    display: inline-block;
+   animation: drop 1s linear;
+   
+   
+}
+.page-title-start {
+    display: inline-block;
+   animation: shake 2s linear;
+   
+}
+.icons {
+    height: 30px;
+    margin: auto;
+    padding: 2px;
+}
+
+.messages{
+    color: rgb(7, 6, 10);
+    font-size: medium;
+    font-style: italic;
+    padding: 5px;
+    margin-top:1%;
+}
+
+@keyframes logo-rotation {
+    0% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+  }
+
+  @keyframes logo-bounce {
+    50% { transform:translateY(0%); }
+    80% { transform:translateY(-20%); }
+    90% { transform:translateY(0%); }
+    95% { transform:translateY(-7%); }
+    97% { transform:translateY(0%); }
+    99% { transform:translateY(-3%); }
+    100% { transform:translateY(0); }
+  }
+
+  @keyframes shake {
+    0% {transform:rotate(-10deg);}
+    10% {transform:rotate(10deg);}
+    20% {transform:rotate(-15deg);}
+    30% {transform:rotate(15deg);}
+    50% {transform:rotate(0deg);}
+    60% {transform:rotate(-10deg);}
+    80% {transform:rotate(10deg);}
+    100% {transform:rotate(0deg);}
+  }
+
+  @keyframes move-right {
+    0% {transform:translateX(-10px);opacity: 0;}
+    50% {transform:translateX(50px) rotate(5deg);opacity: 1;}
+    75% {transform:rotate(-5deg);opacity: 1;}
+    100% {transform:translateX(0)rotate(0deg);opacity: 1;}
+  }
+  @keyframes drop {
+    0% { transform:translateY(-50%); opacity: 0;}
+    50% { transform:translateY(20%); }
+    80% { transform:translateY(-20%); opacity: 1;}
+    90% { transform:translateY(0%); }
+    95% { transform:translateY(-7%); }
+    97% { transform:translateY(0%); }
+    99% { transform:translateY(-3%); }
+    100% { transform:translateY(0); }
+  }
