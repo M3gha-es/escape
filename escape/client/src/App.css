@@ -29,7 +29,7 @@
 }
 .logoT {
    position: absolute;
-   margin-top: -2.6%;
+   margin-top: -3.5%;
    margin-left: 0.2%;
    font-size: 54px;
    color:#FFFACD;
@@ -83,13 +83,13 @@
   }
 
   @keyframes logo-bounce {
-    50% { transform:translateY(0%); }
-    80% { transform:translateY(-20%); }
-    90% { transform:translateY(0%); }
+    50% { transform:translateY(1%); }
+    80% { transform:translateY(-18%); }
+    90% { transform:translateY(1%); }
     95% { transform:translateY(-7%); }
-    97% { transform:translateY(0%); }
+    97% { transform:translateY(1%); }
     99% { transform:translateY(-3%); }
-    100% { transform:translateY(0); }
+    100% { transform:translateY(2%); }
   }
 
   @keyframes shake {

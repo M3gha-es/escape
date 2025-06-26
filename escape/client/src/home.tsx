@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Button, Card, Col, Modal, Row } from "react-bootstrap";
 import * as data from './constants/data.json';
 import { MSGs } from "./constants/messages";
-import { loginCheck } from "./services/authServices";
+import { loginCheck, logout } from "./services/authServices";
 import { useNavigate } from "react-router-dom";
 import { URLs } from "./constants/consts";
 
@@ -50,7 +50,16 @@ const Home = () => {
   };
   const handleClick = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
-    navigate("/"+(e.target as HTMLInputElement).value);
+    const path = (e.target as HTMLInputElement).value;
+    //console.log(path);
+    if(path != 'signout')
+      navigate("/"+(e.target as HTMLInputElement).value);
+    else{
+     // console.log('signout');
+      const response =  logout();
+      console.log(response.success);
+      window.location.reload();
+    }
   };
 
     return (
@@ -58,7 +67,7 @@ const Home = () => {
       {isAuthenticated&&<h4>{MSGs.HOME_AUTHORIRIZED_USERS} {name}!</h4>}
       <Row xs={1} md={3} className="g-4">
       {authorizedList.map((art, idx) => (
-        
+        <>
         <Col key={idx} >
           <Card onClick={()=>handleShow(art.url, art.title)} style={{width:"25rem"}}>
           <img className="icons" src={URLs.PIN} />
@@ -88,6 +97,8 @@ const Home = () => {
         </Modal.Footer>
       </Modal>
         </Col>
+        
+      </>
       ))}
       {!isAuthenticated&&<Col>
         <div>
@@ -98,6 +109,13 @@ const Home = () => {
         <div className="messages">{MSGs.SIGNUP_PROMPT} <button type="button" value="register" className="btn btn-primary btn-sm" onClick={(e:React.MouseEvent<HTMLButtonElement, MouseEvent>)=>handleClick(e)}>Sign Up</button></div>
       </Col>}
     </Row>
+    {isAuthenticated&&<Row className="justify-content-md-center py-3">
+      <Col xs={{ order: 1 }}>
+      <button type="button" value="signout" className="btn btn-secondary btn-md"  onClick={(e:React.MouseEvent<HTMLButtonElement, MouseEvent>)=>handleClick(e)}>Signout</button>
+      </Col>
+      <Col xs={{ order: 0 }}>
+      </Col>
+      </Row>}
     </>
   );
 

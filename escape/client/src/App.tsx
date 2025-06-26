@@ -6,6 +6,7 @@ import {Routes, Route} from 'react-router-dom';
 import Home from './home';
 import { Col, Row } from 'react-bootstrap';
 import { URLs } from './constants/consts';
+import SignOut from './auth/signout';
 
 function App() {
 
@@ -23,13 +24,13 @@ function App() {
           <div className="logoT">M</div>
         </Col>
       </Row>
-         
       </div>
       <>
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/register" element={<Register />} />
             <Route path="/signin" element={<SignIn />} />
+            {/* <Route path="/signout" element={<SignOut />} /> */}
         </Routes>
       </>
       

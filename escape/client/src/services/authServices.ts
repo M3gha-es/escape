@@ -57,13 +57,18 @@ export const loginCheck = () => {
                 success: false,
                 message: err as string
               }
-                //console.log(response);
+                console.log(response);
                 return response;
             
     });
 };
 export const logout = () => {
   localStorage.removeItem("user");
+  const response:Response = {
+    success: true,
+    message: ""
+  }
+  return response;
 };
 
 export const getCurrentUser = () => {
